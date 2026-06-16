@@ -1,0 +1,14 @@
+D:\VS Repo\ReactChatWebApi\ReactChatModels\bin\Debug\net10.0\ReactChatModels.deps.json
+D:\VS Repo\ReactChatWebApi\ReactChatModels\bin\Debug\net10.0\ReactChatModels.runtimeconfig.json
+D:\VS Repo\ReactChatWebApi\ReactChatModels\bin\Debug\net10.0\ReactChatModels.dll
+D:\VS Repo\ReactChatWebApi\ReactChatModels\bin\Debug\net10.0\ReactChatModels.pdb
+D:\VS Repo\ReactChatWebApi\ReactChatModels\obj\Debug\net10.0\ReactChatModels.csproj.AssemblyReference.cache
+D:\VS Repo\ReactChatWebApi\ReactChatModels\obj\Debug\net10.0\ReactChatModels.GeneratedMSBuildEditorConfig.editorconfig
+D:\VS Repo\ReactChatWebApi\ReactChatModels\obj\Debug\net10.0\ReactChatModels.AssemblyInfoInputs.cache
+D:\VS Repo\ReactChatWebApi\ReactChatModels\obj\Debug\net10.0\ReactChatModels.AssemblyInfo.cs
+D:\VS Repo\ReactChatWebApi\ReactChatModels\obj\Debug\net10.0\ReactChatModels.csproj.CoreCompileInputs.cache
+D:\VS Repo\ReactChatWebApi\ReactChatModels\obj\Debug\net10.0\ReactChatModels.dll
+D:\VS Repo\ReactChatWebApi\ReactChatModels\obj\Debug\net10.0\refint\ReactChatModels.dll
+D:\VS Repo\ReactChatWebApi\ReactChatModels\obj\Debug\net10.0\ReactChatModels.pdb
+D:\VS Repo\ReactChatWebApi\ReactChatModels\obj\Debug\net10.0\ReactChatModels.genruntimeconfig.cache
+D:\VS Repo\ReactChatWebApi\ReactChatModels\obj\Debug\net10.0\ref\ReactChatModels.dll

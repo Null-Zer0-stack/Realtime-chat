@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="ReactChatModels/ReactChatModels.csproj" Id="5fde27ff-9a54-4901-b796-949490c7ff46" />
+  <Project Path="ReactChatWebApi/ReactChatWebApi.csproj" />
+</Solution>
