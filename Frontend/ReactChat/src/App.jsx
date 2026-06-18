@@ -27,7 +27,7 @@ function App() {
           path="/chat" 
           element={
             <ProtectedRoute>
-              <Chat />
+             <Chat setIsLoggedIn={setIsLoggedIn} /> 
             </ProtectedRoute>
           } 
         />

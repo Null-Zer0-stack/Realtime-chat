@@ -4,9 +4,9 @@ namespace ReactChatWebApi.Hubs
 {
     public class ChatHub : Hub
     {
-        public async Task SendMessage(string userId, string userName, string message)
+        public async Task SendMessage(string senderId, string senderName, string receiverId, string message)
         {
-            await Clients.All.SendAsync("ReceiveMessage", userId, userName, message, DateTime.Now.ToString("HH:mm"));
+            await Clients.All.SendAsync("ReceiveMessage", senderId, senderName, receiverId, message, DateTime.Now.ToString("HH:mm"));
         }
 
         public async Task UserConnected(string userId, string userName)

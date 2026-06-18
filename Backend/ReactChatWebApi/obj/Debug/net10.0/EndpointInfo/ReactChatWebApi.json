@@ -5,7 +5,7 @@
     "version": "v1"
   },
   "paths": {
-    "/api/Chat/messages": {
+    "/api/Chat/users": {
       "get": {
         "tags": [
           "Chat"
@@ -15,7 +15,53 @@
             "description": "OK"
           }
         }
-      },
+      }
+    },
+    "/api/Chat/user/{visibleId}": {
+      "get": {
+        "tags": [
+          "Chat"
+        ],
+        "parameters": [
+          {
+            "name": "visibleId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Chat/messages/{friendId}": {
+      "get": {
+        "tags": [
+          "Chat"
+        ],
+        "parameters": [
+          {
+            "name": "friendId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Chat/messages": {
       "post": {
         "tags": [
           "Chat"
@@ -133,6 +179,7 @@
       "Message": {
         "required": [
           "content",
+          "receiverId",
           "senderId"
         ],
         "type": "object",
@@ -142,6 +189,10 @@
             "format": "int32"
           },
           "senderId": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "receiverId": {
             "minLength": 1,
             "type": "string"
           },

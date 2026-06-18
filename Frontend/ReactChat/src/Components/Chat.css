@@ -175,3 +175,305 @@
 .send-button:active {
   transform: scale(0.98);
 }
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logout-btn {
+  background-color: rgba(207, 22, 22, 0.774);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.logout-btn:hover {
+  background-color: rgba(202, 26, 26, 0.35);
+  transform: translateY(-1px);
+}
+
+.logout-btn:active {
+  transform: scale(0.95);
+}
+
+.header-left {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.chatting-with {
+  font-size: 0.85rem;
+  opacity: 0.9;
+}
+
+.chatting-with strong {
+  color: #fff;
+}
+
+/* Chat body with sidebar */
+.chat-body {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+/* Users Sidebar */
+.users-sidebar {
+  width: 280px;
+  background-color: #f8fafc;
+  border-right: 1px solid #e2e8f0;
+  display: flex;
+  flex-direction: column;
+}
+
+.users-sidebar h3 {
+  padding: 16px;
+  margin: 0;
+  background-color: #2563eb;
+  color: white;
+  font-size: 1rem;
+}
+
+.users-list {
+  flex: 1;
+  overflow-y: auto;
+  padding: 8px;
+}
+
+.user-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+  margin-bottom: 4px;
+}
+
+.user-item:hover {
+  background-color: #e0e7ff;
+}
+
+.user-item.active {
+  background-color: #2563eb;
+  color: white;
+}
+
+.user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #2563eb;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.user-item.active .user-avatar {
+  background-color: white;
+  color: #2563eb;
+}
+
+.user-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.user-name {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.user-email {
+  font-size: 0.8rem;
+  opacity: 0.7;
+}
+
+.online-dot {
+  color: #10b981;
+  font-size: 0.7rem;
+}
+
+/* Chat Area */
+.chat-area {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.no-chat-selected {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #64748b;
+  text-align: center;
+  padding: 40px;
+}
+
+.no-chat-icon {
+  font-size: 4rem;
+  margin-bottom: 16px;
+  opacity: 0.5;
+}
+
+.no-chat-selected h3 {
+  font-size: 1.3rem;
+  margin-bottom: 8px;
+  color: #334155;
+}
+
+.no-chat-selected p {
+  font-size: 0.95rem;
+}
+
+/* Message sender name */
+.sender-name {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #2563eb;
+  margin-bottom: 4px;
+  display: block;
+}
+
+.message.received .sender-name {
+  color: #64748b;
+}
+
+/* Adjust existing styles */
+.chat-messages {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background-color: #f8fafc;
+}
+
+.chat-container {
+  width: 100%;
+  max-width: 1000px; /* Increased width */
+  height: 700px; /* Increased height */
+}
+
+.my-user-id {
+  font-size: 0.8rem;
+  opacity: 0.9;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 2px 8px;
+  border-radius: 4px;
+  display: inline-block;
+  margin-top: 4px;
+}
+
+.my-user-id strong {
+  color: #fff;
+  font-family: monospace;
+}
+
+/* Add Friend Section */
+.add-friend-section {
+  padding: 12px;
+  border-bottom: 1px solid #e2e8f0;
+  background-color: #f1f5f9;
+}
+
+.add-friend-form {
+  display: flex;
+  gap: 8px;
+}
+
+.friend-id-input {
+  flex: 1;
+  padding: 8px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  font-family: monospace;
+  letter-spacing: 1px;
+}
+
+.friend-id-input:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.add-friend-btn {
+  padding: 8px 16px;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.add-friend-btn:hover {
+  background-color: #1d4ed8;
+}
+
+.add-friend-btn:disabled {
+  background-color: #94a3b8;
+  cursor: not-allowed;
+}
+
+/* User ID display in user list */
+.user-id {
+  font-size: 0.75rem;
+  opacity: 0.7;
+  font-family: monospace;
+  letter-spacing: 0.5px;
+}
+
+/* Your ID display in no-chat-selected */
+.your-id-display {
+  margin-top: 24px;
+  padding: 16px;
+  background-color: #f1f5f9;
+  border-radius: 8px;
+  border: 2px dashed #2563eb;
+}
+
+.your-id-display p {
+  margin: 4px 0;
+  font-size: 0.95rem;
+}
+
+.your-id-display strong {
+  color: #2563eb;
+  font-family: monospace;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+}
+
+.share-id-hint {
+  font-size: 0.85rem !important;
+  color: #64748b;
+  font-style: italic;
+}
+
+/* Disabled send button */
+.send-button:disabled {
+  background-color: #94a3b8;
+  cursor: not-allowed;
+  opacity: 0.6;
+}

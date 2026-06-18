@@ -1,16 +1,6 @@
 [
   {
     "ContainingType": "ReactChatWebApi.Controllers.ChatController",
-    "Method": "GetMessages",
-    "RelativePath": "api/Chat/messages",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "ReactChatWebApi.Controllers.ChatController",
     "Method": "SaveMessage",
     "RelativePath": "api/Chat/messages",
     "HttpMethod": "POST",
@@ -23,6 +13,48 @@
         "IsRequired": true
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ReactChatWebApi.Controllers.ChatController",
+    "Method": "GetMessages",
+    "RelativePath": "api/Chat/messages/{friendId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "friendId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ReactChatWebApi.Controllers.ChatController",
+    "Method": "GetUserByVisibleId",
+    "RelativePath": "api/Chat/user/{visibleId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "visibleId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ReactChatWebApi.Controllers.ChatController",
+    "Method": "GetUsers",
+    "RelativePath": "api/Chat/users",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   },
   {

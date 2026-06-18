@@ -17,6 +17,8 @@ namespace ReactChatModels
         public string PasswordHash { get; set; } = string.Empty;
 
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+        [Required]
+        public string UserIdVisible { get; set; } = string.Empty;
 
         public bool IsOnline { get; set; } = false;
     }

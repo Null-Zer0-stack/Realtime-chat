@@ -30,12 +30,15 @@ namespace ReactChatWebApi.Controllers
                 return BadRequest(new { message = "User with this email already exists" });
             }
 
+            var UserIdVisibleToSite = Guid.NewGuid().ToString("N").Substring(0, 8).ToUpper();
+
             var user = new User
             {
                 Name = model.Name,
                 Email = model.Email,
                 PasswordHash = BCrypt.Net.BCrypt.HashPassword(model.Password),
-                CreatedAt = DateTime.UtcNow
+                CreatedAt = DateTime.UtcNow,
+                UserIdVisible = UserIdVisibleToSite
             };
 
             _db.Users.Add(user);
@@ -47,7 +50,8 @@ namespace ReactChatWebApi.Controllers
             {
                 Token = token,
                 Email = user.Email,
-                Name = user.Name
+                Name = user.Name,
+                UserIdVisible = user.UserIdVisible
             });
         }
     }
