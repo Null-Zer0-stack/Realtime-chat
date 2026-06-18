@@ -1,2 +1,2 @@
 # Realtime-chat
-React.js and .net core realtime chat 
+A scuffed realtime chat 
